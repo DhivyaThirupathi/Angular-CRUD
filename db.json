@@ -1,0 +1,14 @@
+{
+  "students": [
+    {
+      "firstName": "dfgh",
+      "lastName": "sdf",
+      "email": "dhivyatj20@gmail.com",
+      "birthday": "2003-12-19T18:30:00.000Z",
+      "gender": "female",
+      "academicLevel": "Master of Science (MSc)",
+      "courseOfStudy": "Electrical Engineering",
+      "id": "4b35"
+    }
+  ]
+}

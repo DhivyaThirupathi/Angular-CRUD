@@ -1,0 +1,220 @@
+.main-body {
+  padding: 30px 20px;
+  margin: 0 auto;
+  max-width: 1300px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  
+  .section-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: #212529;
+    letter-spacing: -0.5px;
+  }
+  
+  .add-button {
+    background-color: #6c757d;
+    color: white;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(108, 117, 125, 0.3);
+    
+    mat-icon {
+      margin-right: 8px;
+    }
+    
+    &:hover {
+      background-color: #5a6268;
+    }
+  }
+}
+
+.filter-section {
+  margin-bottom: 24px;
+  
+  mat-form-field {
+    width: 100%;
+    
+    ::ng-deep .mat-form-field-wrapper {
+      padding-bottom: 0;
+    }
+    
+    ::ng-deep .mat-form-field-flex {
+      background-color: white;
+      border-radius: 8px;
+    }
+    
+    ::ng-deep .mat-form-field-underline {
+      display: none;
+    }
+  }
+}
+
+.table-container {
+  position: relative;
+  min-height: 400px;
+  overflow: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.student-table {
+  width: 100%;
+  
+  th.mat-header-cell {
+    font-weight: 600;
+    color: #495057;
+    font-size: 14px;
+    padding: 16px;
+    background-color: #f1f3f5;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e9ecef;
+  }
+  
+  td.mat-cell {
+    padding: 16px;
+    font-size: 14px;
+    color: #343a40;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .email-cell {
+    color: #495057;
+    font-weight: 400;
+  }
+  
+  .student-row {
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background-color: #f8f9fa;
+    }
+  }
+  
+  .action-buttons {
+    white-space: nowrap;
+    
+    button {
+      margin-right: 8px;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      mat-icon {
+        font-size: 16px;
+        line-height: 16px;
+        height: 16px;
+        width: 16px;
+      }
+    }
+    
+    .edit-button {
+      background-color: #20c997;
+      color: white;
+      
+      &:hover {
+        background-color: #1ba17d;
+      }
+    }
+    
+    .delete-button {
+      background-color: #fa5252;
+      color: white;
+      
+      &:hover {
+        background-color: #e03131;
+      }
+    }
+  }
+}
+
+.gender-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  
+  &.male {
+    background-color: #e7f5ff;
+    color: #1971c2;
+  }
+  
+  &.female {
+    background-color: #fff0f6;
+    color: #d6336c;
+  }
+  
+  &.other {
+    background-color: #f3f0ff;
+    color: #7048e8;
+  }
+}
+
+.academic-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: #ebfbee;
+  color: #2b8a3e;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.no-data-cell {
+  padding: 48px 16px !important;
+  text-align: center;
+}
+
+.no-data-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #868e96;
+  
+  mat-icon {
+    font-size: 48px;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+mat-paginator {
+  border-top: 1px solid #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .add-button {
+      margin-top: 16px;
+    }
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+}
