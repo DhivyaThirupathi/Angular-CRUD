@@ -1,1 +1,1 @@
-https://dhivyathirupathi.github.io/Angular-CRUD/
+demo -  https://dhivyathirupathi.github.io/Angular-CRUD/
